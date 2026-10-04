@@ -232,3 +232,27 @@ table.ledger td:nth-child(2){min-width:220px}
 h2.sec .cnt{margin-left:auto;font:.7rem/1 var(--mono);color:var(--faint)}
 h2.sec a{color:inherit}
 .fine{font-size:.82rem}
+
+/* ---- compare ---- */
+.cgrid{border:1px solid var(--line);border-radius:3px;margin:0 0 20px;background:var(--panel2)}
+.crow{display:grid;border-bottom:1px solid var(--line2)}
+.crow:last-child{border-bottom:none}
+.crow > div{padding:11px 14px;font-size:.88rem;min-width:0}
+.crow > div + div{border-left:1px solid var(--line2)}
+.chead{background:#0E151B;position:sticky;top:57px;z-index:2}
+.ch{border-top:2px solid;font:.66rem/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.ch a{color:var(--ink)}
+.cq{font:600 .92rem/1.35 var(--serif);color:var(--bright)}
+.cc.none{color:var(--faint);font-style:italic}
+.cc.merged{background:rgba(227,160,60,.035)}
+.cc .cl{display:none}
+.cc.merged .cl{display:block;margin-bottom:5px}
+.big{font:600 1.3rem/1 var(--serif);color:var(--bright)}
+@media(max-width:760px){
+  .crow{grid-template-columns:1fr!important}
+  .crow > div + div{border-left:none;border-top:1px dashed var(--line2)}
+  .crow > div{grid-column:auto!important}
+  .chead{display:none}
+  .cq{background:#0E151B}
+  .cc .cl{display:block;margin-bottom:5px}
+}

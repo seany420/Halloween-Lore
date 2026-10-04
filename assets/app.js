@@ -95,6 +95,7 @@ function home(){
       ["places","Places","Haddonfield, the Myers house, Smith's Grove, and everywhere else, with real filming locations."],
       ["lore","Lore","Samhain, Thorn, the mask, the white horse, Silver Shamrock, and the rules of the Shape."],
       ["media","Beyond the films","Novels, comics, games, documentaries, scores, cuts, and rights."],
+      ["compare","Compare","The same story beats side by side across all five continuities."],
       ["kills","Kill ledger","Every death in all 13 films: who, how, by whom, and in which cut."],
       ["writers","Writer's room","Contradictions, open seams, body counts, and craft notes for writing into the franchise."]
     ].map(function(x){ return '<a class="card" href="#/'+x[0]+'"><h3>'+x[1]+'</h3><p>'+x[2]+'</p></a>'; }).join("") + '</div>' +
@@ -272,6 +273,61 @@ function ledgerPage(){
     }).join("") : '<p class="empty">No deaths match those filters.</p>');
 }
 
+function comparePage(arg){
+  if(arg && /^[A-E]{1,5}$/.test(arg)) state.cmp = arg;
+  var sel = LETTERS.filter(function(l){ return (state.cmp || "ABCD").indexOf(l) >= 0; });
+  if(!sel.length) sel = ["A"];
+  var cols = 'style="grid-template-columns:minmax(150px,200px) repeat('+sel.length+',minmax(0,1fr))"';
+  var head = '<div class="crow chead" '+cols+'><div></div>' + sel.map(function(l){
+    return '<div class="ch" style="border-top-color:var(--'+l+')"><a href="#/timeline/'+l+'">'+badges([l])+' '+esc(TL[l].name)+'</a></div>'; }).join("") + '</div>';
+  /* cells with identical text in neighboring columns merge into one spanning cell */
+  function row(label, vals){
+    var cells = [], i = 0;
+    while(i < sel.length){
+      var j = i + 1;
+      while(j < sel.length && vals[j] != null && vals[j] === vals[i]) j++;
+      var ls = sel.slice(i, j), v = vals[i];
+      cells.push('<div class="cc'+(v == null ? ' none' : '')+(ls.length > 1 ? ' merged' : '')+'" style="grid-column:span '+ls.length+'">' +
+        '<span class="cl">'+badges(ls)+'</span>' + (v == null ? 'Not in this continuity.' : v) + '</div>');
+      i = j;
+    }
+    return '<div class="crow" '+cols+'><div class="cq">'+esc(label)+'</div>'+cells.join("")+'</div>';
+  }
+  var txt = function(s){ return s == null ? null : esc(s); };
+  var body = HL.compare.map(function(g){
+    return sec(g.group) + '<div class="cgrid">' + head + g.rows.map(function(r){ return row(r.q, sel.map(function(l){ return txt(r[l]); })); }).join("") + '</div>';
+  }).join("");
+
+  /* derived rows: films, deaths, performers */
+  var tf = function(l){ return TL[l].films.map(function(id){ return film[id]; }); };
+  var actorsFor = function(l, cid){
+    var seen = []; tf(l).forEach(function(f){ (f.cast||[]).forEach(function(c){ if(c[0] === cid && seen.indexOf(c[1]) < 0) seen.push(c[1]); }); });
+    return seen.length ? esc(seen.join(" · ")) : null;
+  };
+  var nums = sec("By the numbers") + '<div class="cgrid">' + head +
+    row("Films", sel.map(function(l){ return TL[l].films.map(filmLink).join(" → "); })) +
+    row("Deaths on screen", sel.map(function(l){
+      var fs = tf(l), n = fs.reduce(function(s,f){ return s + deaths(f); }, 0), ap = fs.some(approx);
+      return '<span class="big">'+(ap ? "≈" : "")+n+'</span> across '+fs.length+' film'+(fs.length > 1 ? "s" : ""); })) +
+    row("Michael played by", sel.map(function(l){ return l === "E" ? null : actorsFor(l, "michael-myers"); })) +
+    row("Laurie played by", sel.map(function(l){ return actorsFor(l, "laurie-strode"); })) +
+    row("Loomis played by", sel.map(function(l){ return actorsFor(l, "sam-loomis"); })) +
+    '</div>';
+
+  /* character fates shared by 2+ selected timelines */
+  var shared = C.filter(function(c){ return sel.filter(function(l){ return c.fate && c.fate[l]; }).length >= 2; });
+  var fates = shared.length ? sec("Same character, different fates") + '<div class="cgrid">' + head + shared.map(function(c){
+    return row(c.name, sel.map(function(l){ return c.fate[l] ? esc(c.fate[l]) : null; })).replace('<div class="cq">'+esc(c.name)+'</div>', '<div class="cq">'+chrLink(c.id)+'</div>');
+  }).join("") + '</div>' : "";
+
+  return '<div class="pagehead"><p class="eyebrow">Side by side</p><h1>Compare continuities</h1>' +
+    '<p>The same story beats as each timeline tells them. Where neighboring timelines agree, their cells merge. Pick which continuities to line up.</p></div>' +
+    '<div class="chips" role="group" aria-label="Continuities to compare">' + LETTERS.map(function(l){
+      return '<button class="chip" data-tl="'+l+'" data-cmp="'+l+'" aria-pressed="'+(sel.indexOf(l) >= 0)+'">'+l+' · '+TL[l].name.toUpperCase()+'</button>'; }).join("") +
+    '<button class="chip" data-cmp="ABCDE">ALL FIVE</button></div>' +
+    body + nums + fates;
+}
+
 function writersPage(){
   var max = Math.max.apply(null, F.map(deaths));
   var bars = F.filter(function(f){ return deaths(f) > 0; }).map(function(f){
@@ -307,6 +363,7 @@ L.forEach(function(x){ index.push({ kind:"Lore", href:"#/lore", title:x.title, t
 T.forEach(function(e){ index.push({ kind:"Timeline", href:"#/timeline", title:e.d, text:e.t }); });
 HL.media.forEach(function(g){ g.items.forEach(function(i){ index.push({ kind:g.group, href:"#/media", title:i[0], text:i[1]+" "+i[2] }); }); });
 K.forEach(function(k){ index.push({ kind:"Death", href:"#/films/"+k.f, title:k.v+" · "+filmLabel(film[k.f]), text:[k.how, byWho(k), METHODS[k.m], k.note].join(" ") }); });
+HL.compare.forEach(function(g){ g.rows.forEach(function(r){ index.push({ kind:"Compare", href:"#/compare/ABCDE", title:g.group+" · "+r.q, text:LETTERS.map(function(l){ return r[l] ? l+": "+r[l] : ""; }).join(" ") }); }); });
 HL.seams.forEach(function(s){ index.push({ kind:"Open seam", href:"#/writers", title:s[0], text:s[1] }); });
 
 function snippet(text, q){
@@ -334,9 +391,9 @@ var routes = {
   "": home, films:function(id){ return id ? filmPage(id) : filmsIndex(); },
   characters:function(id){ return id ? charPage(id) : charsIndex(); },
   timeline:timelinePage, places:function(id){ return id ? placePage(id) : placesIndex(); },
-  lore:lorePage, media:mediaPage, kills:ledgerPage, writers:writersPage, search:function(q){ return searchPage(decodeURIComponent(q||"")); }
+  lore:lorePage, media:mediaPage, kills:ledgerPage, compare:comparePage, writers:writersPage, search:function(q){ return searchPage(decodeURIComponent(q||"")); }
 };
-var titles = { "":"", films:"Films", characters:"Characters", timeline:"Timeline", places:"Places", lore:"Lore", media:"Beyond the Films", kills:"Kill Ledger", writers:"Writer's Room", search:"Search" };
+var titles = { "":"", films:"Films", characters:"Characters", timeline:"Timeline", places:"Places", lore:"Lore", media:"Beyond the Films", kills:"Kill Ledger", compare:"Compare", writers:"Writer's Room", search:"Search" };
 var qEl = document.getElementById("q");
 
 function render(keepScroll){
@@ -351,6 +408,15 @@ function render(keepScroll){
   bindChips(function(){ render(true); });
   app.querySelectorAll("[data-set]").forEach(function(b){
     b.addEventListener("click", function(){ var kv = b.getAttribute("data-set").split(":"); state[kv[0]] = kv[1]; render(true); });
+  });
+  app.querySelectorAll("[data-cmp]").forEach(function(b){
+    b.addEventListener("click", function(){
+      var v = b.getAttribute("data-cmp"), cur = state.cmp || "ABCD";
+      if(v.length > 1) state.cmp = v;
+      else { var next = cur.indexOf(v) >= 0 ? cur.replace(v, "") : cur + v; if(next) state.cmp = next; }
+      if(location.hash !== "#/compare") history.replaceState(null, "", "#/compare");
+      render(true);
+    });
   });
   var kq = document.getElementById("kq");
   if(kq) kq.addEventListener("input", function(){ state.kq = kq.value; var pos = kq.selectionStart; render(true); var n = document.getElementById("kq"); n.focus(); n.setSelectionRange(pos,pos); });
