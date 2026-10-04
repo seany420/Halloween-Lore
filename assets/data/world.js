@@ -108,7 +108,7 @@ HL.lore = [
         "Competence: he drives after 15 years locked up (\"someone taught him\"). He cuts phone lines, kills power stations, and stages bodies. The Wallace house tableau with the headstone is composed for an audience of one.",
         "Durability: six gunshots and a two-story fall. Fire. A mine shaft. A decapitation (retconned). He's stopped for good only twice: by ritual (Curse, Producer's Cut) and by industrial machinery in front of witnesses (Ends).",
         "Selection: he goes home. Everything organizes around 45 Lampkin Lane and one woman he's decided on. People between him and her are incidental.",
-        "Restraint: as an adult he doesn't kill young children. Tommy, Lindsey, Jamie, Danny, Julian are spared or ignored. It holds in every timeline and it's the closest thing he has to a rule of his own. (In the Zombie films, 10-year-old Michael kills a classmate.)",
+        "Restraint: as an adult he doesn't kill young children. Tommy, Lindsey, Jamie, Danny, Julian are spared or ignored. It holds in every timeline and it's the closest thing he has to a rule of his own. (Exceptions: 10-year-old Michael kills a classmate in the Zombie remake, and in 2018 he kills Kevin, a teenage boy at the bus crash.)",
         "Failure: he loses when the survivor stops running and chooses the ground: the closet, the school, the fortified house, the kitchen. Fleeing prolongs it. Only staging works."] }
 ];
 

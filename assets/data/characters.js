@@ -82,7 +82,7 @@ HL.characters = [
   bio:["The young paramedic sweet on Laurie at Haddonfield Memorial. Slips in blood and is knocked out."],
   fate:{ all:"Ambiguous in the theatrical cut. Survives in the TV cut." } },
 { id:"jill-franco", name:"Nurse Jill Franco", tier:"minor", tls:["A","B"], role:"Nurse", bio:["The last nurse standing at Haddonfield Memorial."], fate:{ all:"Killed by Michael with a scalpel, 1978." } },
-{ id:"budd", name:"Budd Scarmon", tier:"minor", tls:["A","B"], role:"Paramedic", bio:["Jimmy's partner, more interested in Nurse Karen."], fate:{ all:"Strangled, 1978." } },
+{ id:"budd", name:"Budd Scarlotti", tier:"minor", tls:["A","B"], role:"Paramedic", bio:["Jimmy's partner, more interested in Nurse Karen."], fate:{ all:"Strangled, 1978." } },
 { id:"karen-bailey", name:"Nurse Karen Bailey", tier:"minor", tls:["A","B"], role:"Nurse", bio:["Slips off for the hydrotherapy tub with Budd."], fate:{ all:"Scalded to death, 1978." } },
 { id:"gary-hunt", name:"Deputy Gary Hunt", tier:"minor", tls:["A","B"], role:"Deputy", bio:["Takes over the search after Brackett leaves to grieve Annie."], fate:{ all:"Survives." } },
 
@@ -108,7 +108,7 @@ HL.characters = [
   bio:["17, smart, and stuck babysitting Jamie the night Michael comes back. The closest the sequels get to a second Laurie, and the best of them. Runs Michael off the road with a truck to save Jamie."],
   fate:{ A:"Killed by Michael with scissors, 1989." } },
 { id:"ben-meeker", name:"Sheriff Ben Meeker", tier:"major", tls:["A"], role:"Haddonfield's sheriff, 1988–89",
-  bio:["Practical, overwhelmed, and loyal to Loomis by the end. Fortifies his house for Jamie and loses his daughter Kelly in it."], fate:{ A:"Survives 1989." } },
+  bio:["Practical, overwhelmed, and loyal to Loomis by the end. Fortifies his house for Jamie and loses his daughter Kelly in it."], fate:{ A:"Unclear. Usually counted among the officers the Man in Black kills at the station, 1989." } },
 { id:"kelly-meeker", name:"Kelly Meeker", tier:"minor", tls:["A"], role:"The sheriff's daughter", bio:["Dating Brady, Rachel's boyfriend, behind Rachel's back."], fate:{ A:"Killed with a shotgun, 1988." } },
 { id:"brady", name:"Brady", tier:"minor", tls:["A"], role:"Rachel's boyfriend", bio:["Cheats on Rachel, then dies holding the stairs so she and Jamie can get to the attic."], fate:{ A:"Killed by Michael, 1988." } },
 { id:"darlene-carruthers", name:"Darlene Carruthers", tier:"minor", tls:["A"], role:"Jamie's foster mother", bio:["Runs a bath for Jamie at the end of the night."], fate:{ A:"Stabbed with scissors by Jamie, 1988. Her fate is left vague." } },
@@ -183,5 +183,5 @@ HL.characters = [
 { id:"corey-cunningham", name:"Corey Cunningham", tier:"major", tls:["D"], role:"The pariah",
   bio:["A gentle engineering student who accidentally kills the boy he's babysitting in 2019 and becomes Haddonfield's designated monster. Michael spares him in a storm drain, and Corey comes back changed. He takes the mask. The franchise's only successful transfer of it."],
   fate:{ D:"Dies Oct 2022: stabs himself to frame Laurie, finished by Michael." } },
-{ id:"joan-cunningham", name:"Joan Cunningham", tier:"minor", tls:["D"], role:"Corey's mother", bio:["Controlling and protective."], fate:{ D:"Survives." } }
+{ id:"joan-cunningham", name:"Joan Cunningham", tier:"minor", tls:["D"], role:"Corey's mother", bio:["Controlling and protective. Pushes Corey toward the town's forgiveness and away from Allyson."], fate:{ D:"Killed by Corey, 2022." } }
 ];

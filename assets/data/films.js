@@ -21,14 +21,6 @@ HL.films = [
     "That night Laurie babysits Tommy Doyle across the street from Annie Brackett, who's babysitting Lindsey Wallace. Michael kills Annie in her car, Bob in the kitchen, and Lynda on the phone with Laurie. He arranges the bodies and the headstone upstairs in the Wallace house for Laurie to find.",
     "Laurie fights him off with a knitting needle, a coat hanger, and his own knife. Loomis shoots him six times and he falls off the second-floor balcony. When Loomis looks down, the lawn is empty."
   ],
-  kills: "5",
-  killList: [
-    ["Judith Myers","kitchen knife (1963)"],
-    ["Truck driver","offscreen, for his coveralls"],
-    ["Annie Brackett","strangled and throat cut in her car"],
-    ["Bob Simms","pinned to the wall with a kitchen knife"],
-    ["Lynda van der Klok","strangled with a phone cord"]
-  ],
   cast: [
     ["laurie-strode","Jamie Lee Curtis"],["sam-loomis","Donald Pleasence"],["michael-myers","Nick Castle"],
     ["annie-brackett","Nancy Kyes"],["lynda","P.J. Soles"],["leigh-brackett","Charles Cyphers"],
@@ -65,13 +57,6 @@ HL.films = [
     "At the elementary school Loomis finds SAMHAIN written in blood on a chalkboard. Then Marion Chambers arrives with a marshal and a file: Laurie is Michael's younger sister, adopted after their parents died, the records sealed.",
     "Loomis gets to the hospital. Laurie shoots Michael through both eyes. Blind, he slashes at the air. Loomis opens the gas lines in the operating room and ignites it, and Michael walks out of the fire burning before he falls."
   ],
-  kills: "≈10",
-  killList: [
-    ["Alice Martin","stabbed in her kitchen"],["Ben Tramer","struck by a squad car and burned (not by Michael)"],
-    ["Mr. Garrett","claw hammer to the head"],["Budd Scarmon","strangled"],["Nurse Karen Bailey","scalded in the hydrotherapy tub"],
-    ["Dr. Mixter","syringe / scalpel, offscreen"],["Mrs. Alves","blood drained via IV"],["Nurse Janet Marshall","syringe to the eye"],
-    ["Nurse Jill Franco","scalpel to the back"],["Marshal Terrence Gummell","throat cut"]
-  ],
   cast: [
     ["laurie-strode","Jamie Lee Curtis"],["sam-loomis","Donald Pleasence"],["michael-myers","Dick Warlock"],
     ["leigh-brackett","Charles Cyphers"],["marion-chambers","Nancy Stephens"],["jimmy-lloyd","Lance Guest"],
@@ -104,8 +89,6 @@ HL.films = [
     "Cochran has stolen a bluestone from Stonehenge and chipped fragments of it into the trademark seal on millions of masks: pumpkin, skull, witch. On Halloween night a televised Big Giveaway will play a signal, and every child wearing one will die, their heads collapsing into insects and snakes. It's a sacrifice restoring Samhain's old purpose.",
     "Challis escapes, discovers Ellie has been replaced by an android, and calls the networks to stop the broadcast. Two channels pull it. The third won't. The film ends on him screaming \"Stop it!\" into the phone."
   ],
-  kills: "≈10 onscreen, millions implied",
-  killList: [["Harry Grimbridge","skull crushed in his hospital bed"],["Marge Guttman","struck by a beam from a Silver Shamrock chip"],["Buddy Kupfer and family","the mask demonstration"],["A drunk in the town square","killed by Cochran's androids"]],
   cast: [
     ["dan-challis","Tom Atkins"],["ellie-grimbridge","Stacey Nelkin"],["conal-cochran","Dan O'Herlihy"],["harry-grimbridge","Al Berry"]
   ],
@@ -135,8 +118,6 @@ HL.films = [
     "Loomis, scarred from the fire, hitches a ride with a wandering preacher back to Haddonfield. Michael blacks out the town by killing the power station crew. Sheriff Ben Meeker fortifies his house with Jamie and Rachel inside, and a drunk vigilante posse goes hunting and shoots an innocent man.",
     "State police finally riddle Michael with bullets on a pickup truck and he falls down an abandoned mine shaft. At the Carruthers house, Jamie, in the same clown costume Michael wore in 1963, stabs her foster mother with scissors. Loomis raises a gun and screams."
   ],
-  kills: "≈17",
-  killList: [["Ambulance crew","by hand"],["Gas station attendant and mechanic","by hand, station torched"],["Power station worker","electrocuted"],["Kelly Meeker","shotgun through the chest"],["Deputy Logan","by hand"],["Brady","crushed skull"],["The posse in the truck","by hand"],["Ted Hollister","shot by the posse, mistaken for Michael (not by Michael)"]],
   cast: [
     ["jamie-lloyd","Danielle Harris"],["rachel-carruthers","Ellie Cornell"],["sam-loomis","Donald Pleasence"],["michael-myers","George P. Wilbur"],
     ["ben-meeker","Beau Starr"],["kelly-meeker","Kathleen Kinmont"],["brady","Sasha Jenson"],["darlene-carruthers","Karen Alston"],["reverend-sayer","Carmen Filpi"]
@@ -167,8 +148,6 @@ HL.films = [
     "Jamie calls him uncle and asks him to take off the mask. He does. He's crying. She touches the tear. Then he tries to kill her again. Loomis traps him in a net and beats him unconscious, then collapses with a stroke.",
     "Michael is jailed. A man in black with a Thorn tattoo, seen all through the film, walks into the station, kills everyone, and frees him. Jamie finds the cell empty."
   ],
-  kills: "≈15",
-  killList: [["The hermit","by hand"],["Rachel Carruthers","scissors to the chest"],["Mikey","garden claw"],["Spitz","pitchfork"],["Samantha Thomas","scythe"],["Tina Williams","knife"],["Deputies Nick and Tom","by hand"],["Sheriff's station officers","by the Man in Black"]],
   cast: [
     ["jamie-lloyd","Danielle Harris"],["sam-loomis","Donald Pleasence"],["michael-myers","Don Shanks"],["rachel-carruthers","Ellie Cornell"],
     ["tina-williams","Wendy Kaplan"],["billy-hill","Jeffrey Landman"],["ben-meeker","Beau Starr"],["terence-wynn","Don Shanks (as the Man in Black)"]
@@ -198,8 +177,6 @@ HL.films = [
     "Tommy explains the curse to Loomis. Thorn is a druidic rune. One child per tribe is chosen to kill their own bloodline on Samhain so the rest of the tribe survives. Michael was chosen. Jamie's son is the last of the line, or the next vessel.",
     "Dr. Terence Wynn, Loomis's colleague, is the Man in Black and head of the cult. The finale moves to Smith's Grove, where cult doctors are running experiments. Michael kills the cult. Tommy beats him down with a lead pipe. Loomis goes back in alone. Only the mask is left on the floor."
   ],
-  kills: "≈12–16 (cut-dependent)",
-  killList: [["Jamie Lloyd","impaled on a corn thresher (theatrical); killed later in the hospital (Producer's Cut)"],["Mary the midwife","by hand"],["John Strode","electrocuted, head explodes"],["Debra Strode","axe"],["Tim Strode","by hand"],["Beth","by hand"],["Barry Simms","shock-jock, by hand"],["Dr. Wynn and cult doctors","the lab massacre"]],
   cast: [
     ["sam-loomis","Donald Pleasence"],["tommy-doyle","Paul Rudd"],["kara-strode","Marianne Hagan"],["jamie-lloyd","J.C. Brandy"],
     ["terence-wynn","Mitch Ryan"],["danny-strode","Devin Gardner"],["john-strode","Bradford English"],["debra-strode","Kim Darby"],
@@ -231,8 +208,6 @@ HL.films = [
     "John stays behind with his girlfriend Molly and two friends for a secret party. The campus empties. Michael arrives.",
     "Laurie gets John and Molly out the gate, then locks herself back in with Michael and a fire axe. She stabs him, he goes over a balcony, and the coroner's van takes the body. Laurie steals the van, sees him sit up, crashes it, and pins him against a tree. He reaches toward her. She takes his head off."
   ],
-  kills: "≈6",
-  killList: [["Marion Whittington","throat cut"],["Jimmy Howell","ice skate to the face"],["Tony Allegre","offscreen"],["Charlie Deveraux","throat cut, dumpster"],["Sarah Wainthrope","dumbwaiter, stabbed"],["Will Brennan","stabbed (Laurie's boyfriend)"]],
   cast: [
     ["laurie-strode","Jamie Lee Curtis"],["john-tate","Josh Hartnett"],["molly-cartwell","Michelle Williams"],["will-brennan","Adam Arkin"],
     ["ronny-jones","LL Cool J"],["norma-watson","Janet Leigh"],["charlie-deveraux","Adam Hann-Byrd"],["sarah-wainthrope","Jodi Lyn O'Keefe"],
@@ -263,8 +238,6 @@ HL.films = [
     "A year later, Dangertainment, run by Freddie Harris and Nora Winston, broadcasts a live web event: six college students explore the Myers house with head-mounted cameras. Viewers watch from Halloween parties, including Myles, a high schooler texting with contestant Sara.",
     "Michael is home and kills his way through the cast while the audience assumes it's staged. Sara and Freddie survive; Freddie electrocutes Michael and the house burns. In the morgue, Michael's eyes open."
   ],
-  kills: "≈8",
-  killList: [["Laurie Strode","stabbed, falls from roof"],["Two security guards at Grace Andersen","by hand"],["Bill Woodlake","knife to the head"],["Donna Chang","impaled on a spike"],["Jen Danzig","decapitated"],["Jim Morgan","crushed skull"],["Rudy Grimes","pinned with kitchen knives"],["Nora Winston","offscreen, hanged"],["Charley (cameraman)","tripod"]],
   cast: [
     ["sara-moyer","Bianca Kajlich"],["freddie-harris","Busta Rhymes"],["nora-winston","Tyra Banks"],["laurie-strode","Jamie Lee Curtis"],
     ["myles-barton","Ryan Merriman"],["jen-danzig","Katee Sackhoff"],["bill-woodlake","Thomas Ian Nicholas"],["michael-myers","Brad Loree"]
@@ -293,8 +266,6 @@ HL.films = [
     "At Smith's Grove, under Dr. Loomis, he goes silent and makes papier-mâché masks obsessively. He kills a nurse. Deborah, unable to bear it, shoots herself.",
     "Fifteen years later, during a transfer, he escapes, kills his way out, and walks home. Boo is Laurie Strode now, adopted by the Strodes. He wants her. Loomis, now a true-crime author cashing in on the case, hunts him. It ends in the ruined Myers house with Laurie shooting Michael in the face."
   ],
-  kills: "20+",
-  killList: [["Wesley Rhoades","bully, beaten with a branch"],["Ronnie White","throat cut"],["Steve Haley","bat"],["Judith Myers","stabbed"],["Nurse Wynn","fork to the neck"],["Ismael Cruz","crushed with a TV"],["Guards at Smith's Grove","by hand"],["Big Joe Grizzly","for his coveralls"],["Mason and Cynthia Strode","Laurie's adoptive parents"],["Lynda and Bob","by hand"]],
   cast: [
     ["michael-myers","Tyler Mane / Daeg Faerch"],["sam-loomis","Malcolm McDowell"],["laurie-strode","Scout Taylor-Compton"],["deborah-myers","Sheri Moon Zombie"],
     ["ronnie-white","William Forsythe"],["judith-myers","Hanna Hall"],["leigh-brackett","Brad Dourif"],["annie-brackett","Danielle Harris"],
@@ -324,8 +295,6 @@ HL.films = [
     "Loomis is on a book tour for his new bestseller, which reveals to the world, and to Laurie, that she's Angel Myers. It breaks her.",
     "Michael kills Annie and comes for Laurie. Police surround a shack in a field. Loomis goes in to talk him down and Michael kills him. Michael is shot. The ending depends on the cut: in one, Laurie walks out wearing his mask and is shot by police; in the other she ends in a cell, smiling at a vision of her mother and the horse."
   ],
-  kills: "≈17",
-  killList: [["Annie Brackett","stabbed"],["Dr. Loomis","stabbed"],["Mya Rockwell","stabbed"],["Harley David","stabbed"],["Coroners Gary and Buddy","van crash and decapitation"],["Strip club staff","by hand"],["Hunters and farmers","by hand"]],
   cast: [
     ["laurie-strode","Scout Taylor-Compton"],["michael-myers","Tyler Mane"],["sam-loomis","Malcolm McDowell"],["leigh-brackett","Brad Dourif"],
     ["annie-brackett","Danielle Harris"],["deborah-myers","Sheri Moon Zombie"],["mya-rockwell","Brea Grant"],["harley-david","Angela Trimbur"],["barbara-collins","Margot Kidder"]
@@ -354,8 +323,6 @@ HL.films = [
     "The night before Halloween, Michael's transfer bus crashes. He kills the podcasters, takes the mask, and walks into Haddonfield trick-or-treat night, house by house.",
     "His psychiatrist, Dr. Sartain, Loomis's former student, reveals he engineered the reunion because he wanted to see it. Michael kills him. Laurie, Karen, and Allyson lure Michael into the basement, which turns out to be a cage, and burn the house down on top of him."
   ],
-  kills: "≈18",
-  killList: [["Aaron Korey","bathroom stall"],["Dana Haines","bathroom stall"],["Gas station mechanic","for his coveralls"],["A woman in her kitchen","hammer"],["Vicky","babysitter, knife"],["Dave","pinned with a knife"],["Oscar","impaled on a fence"],["Officer Francis","by hand"],["Dr. Ranbir Sartain","head stomped"],["Ray Nelson","Karen's husband, neck broken"]],
   cast: [
     ["laurie-strode","Jamie Lee Curtis"],["karen-nelson","Judy Greer"],["allyson-nelson","Andi Matichak"],["frank-hawkins","Will Patton"],
     ["ranbir-sartain","Haluk Bilginer"],["michael-myers","James Jude Courtney / Nick Castle"],["ray-nelson","Toby Huss"],["aaron-korey","Jefferson Hall"],
@@ -387,8 +354,6 @@ HL.films = [
     "Laurie spends the film in a hospital bed. The mob fills the hospital, turns on an escaped Smith's Grove patient they think is Michael, and chases him until he jumps to his death.",
     "The mob finally corners Michael outside the Myers house and beats and stabs him nearly to death. He stands up and kills them. Karen, who'd taken the mask to lure him, is killed inside his childhood home."
   ],
-  kills: "≈27, highest in the franchise",
-  killList: [["Firefighters","by hand, saw, extinguisher"],["Big John and Little John","current owners of the Myers house"],["Marion Chambers","by hand, after her gun jams"],["Sondra","stabbed"],["Vanessa and Marcus","by hand"],["Lonnie Elam","by hand"],["Tommy Doyle","his own bat"],["Karen Nelson","stabbed"],["Escaped patient","jumps to escape the mob (not by Michael)"]],
   cast: [
     ["laurie-strode","Jamie Lee Curtis"],["karen-nelson","Judy Greer"],["allyson-nelson","Andi Matichak"],["tommy-doyle","Anthony Michael Hall"],
     ["lindsey-wallace","Kyle Richards"],["marion-chambers","Nancy Stephens"],["lonnie-elam","Robert Longstreet"],["leigh-brackett","Charles Cyphers"],
@@ -419,8 +384,6 @@ HL.films = [
     "Corey starts killing the people who hurt him, sometimes alongside Michael. He takes the mask. Laurie sees it in him. He turns on Michael and takes the mask for himself, then dies at Laurie's house, stabbing himself to frame her, and Michael finishes him.",
     "Michael comes for Laurie in her kitchen. She pins his hands to the counter with knives and cuts his throat and wrist. The town follows the body in a procession to a salvage yard and watches it go into an industrial shredder."
   ],
-  kills: "≈10+ (Michael and Corey)",
-  killList: [["Jeremy Allen","accident, Corey (2019)"],["A homeless man","Michael, in the drain"],["The teenagers who threw Corey off the bridge","Corey and Michael"],["Willy the Kid","radio DJ, Corey"],["Doc Mathis","Corey"],["Corey Cunningham","self-inflicted, finished by Michael"],["Michael Myers","Laurie, then the shredder"]],
   cast: [
     ["laurie-strode","Jamie Lee Curtis"],["allyson-nelson","Andi Matichak"],["corey-cunningham","Rohan Campbell"],["frank-hawkins","Will Patton"],
     ["michael-myers","James Jude Courtney"],["joan-cunningham","Joanne Baron"]

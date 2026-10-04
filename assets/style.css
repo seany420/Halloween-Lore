@@ -221,3 +221,14 @@ mark{background:rgba(227,160,60,.25);color:inherit;padding:0 1px;border-radius:1
 .empty{color:var(--faint);font-style:italic;padding:20px 0}
 
 footer{max-width:1240px;margin:0 auto;padding:30px 16px 60px;color:var(--faint);font-size:.78rem;border-top:1px solid var(--line)}
+
+/* ---- kill ledger ---- */
+.stats.left{justify-content:flex-start;padding:0;margin:0 0 24px}
+.tag{font:.56rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--faint);border:1px solid var(--line);padding:2px 5px;border-radius:2px;white-space:nowrap}
+.note{font-size:.78rem;color:var(--dim);margin-top:4px;font-style:italic}
+td.dimc{color:var(--dim)}
+.mth{font:.66rem/1 var(--mono);letter-spacing:.08em;color:var(--dim);white-space:nowrap}
+table.ledger td:nth-child(2){min-width:220px}
+h2.sec .cnt{margin-left:auto;font:.7rem/1 var(--mono);color:var(--faint)}
+h2.sec a{color:inherit}
+.fine{font-size:.82rem}
